@@ -2,7 +2,7 @@
 
 A responsive password generator built with vanilla HTML, CSS, and JavaScript. Beyond generating strong random passwords, it estimates password strength, calculates entropy, tracks history, and lets users analyze their own passwords — all with dark/light theme support.
 
-**🔗 Live Demo:** [Add your GitHub Pages link here]
+**🔗 Live Demo:**  https://jeelfefar2141.github.io/Password-Generator-Security-Analyzer/index.html
 
 ---
 

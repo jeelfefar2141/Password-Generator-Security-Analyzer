@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- feature 5: dark / light mode -->
+    <button class="themebtn" data-themeToggle>🌙</button>
+
+    <div class="container">
+
+        <a href="index.html" class="back-link">&larr; Back to Generator</a>
+
+        <h1>Password Analysis</h1>
+
+        <!-- feature 4: real password analysis -->
+        <div class="analyzer-container">
+            <p class="analyzer-title">Test Your Own Password</p>
+            <input type="text" class="analyzer-input" placeholder="Enter Password" data-analyzerInput>
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <p class="analyzer-label" data-analyzerLabel>--</p>
+            </div>
+
+            <p class="reason-title">Reason</p>
+            <ul class="reason-list" data-reasonList></ul>
+        </div>
+
+    </div>
+
+    <script src="analysis.js"></script>
+</body>
+</html>

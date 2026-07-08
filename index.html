@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- feature 5: dark / light mode -->
+    <button class="themebtn" data-themeToggle>🌙</button>
+
+    <div class="container">
+
+        <h1>Password Generator</h1>
+
+        <div class="dispaly-container"> 
+
+            <input readonly placeholder="PASSWORD" class="display" data-passwordDisplay>
+
+            <button class="copybtn" data-copy>
+                <span class="tool-tip" data-copyMsg></span>
+                <img src="./asset/Copy.png" alt="copy" height="40" weight="40">
+            </button>
+
+        </div>
+
+        <div class="input-container">
+            <!-- password length -->
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-length>12</p>
+            </div>
+
+            <!-- slider -->
+            <input type="range" min="1" max="20" step="1" class="slider" data-lengthSlider>
+        
+
+            <!-- checkboxes -->
+            <div class="check">
+                <input type="checkbox" id="uppercase" class="maincheck">
+                <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="lowercase" class="maincheck">
+                <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="number" class="maincheck">
+                <label for="number">Include Number</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="symbols" class="maincheck">
+                <label for="symbols">Include Symbols</label>
+            </div>
+
+            <!-- feature 8: pronounceable password -->
+            <div class="check">
+                <input type="checkbox" id="pronounceable" data-pronounceableCheck>
+                <label for="pronounceable">Generate Pronounceable Password</label>
+            </div>
+
+            <!-- strength indicator -->
+            <div class="strength-container">
+                <p>Strength</p>
+                <div  class="indicator"data-strengthIndicator></div>
+            </div>
+
+            <!-- generate-password -->
+            <button class="generatebtn" data-generateButton>Generate Password</button>
+
+        </div>
+
+        <!-- feature 2 + 3: entropy and crack time -->
+        <div class="info-container">
+            <div class="info-box">
+                <p>Entropy</p>
+                <p data-entropyValue>0 bits</p>
+            </div>
+            <div class="info-box">
+                <p>Crack Time</p>
+                <p data-crackTimeValue>--</p>
+            </div>
+        </div>
+
+        <!-- feature 7: export current password -->
+        <div class="export-container">
+            <button class="exportbtn" data-exportTxt>Download TXT</button>
+        </div>
+
+        <!-- feature 1 + 4: tags that open on their own page -->
+        <div class="nav-tags">
+            <a href="history.html" class="tag">Password History</a>
+            <a href="analysis.html" class="tag">Password Analysis</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

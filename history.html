@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- feature 5: dark / light mode -->
+    <button class="themebtn" data-themeToggle>🌙</button>
+
+    <div class="container">
+
+        <a href="index.html" class="back-link">&larr; Back to Generator</a>
+
+        <h1>Password History</h1>
+
+        <!-- feature 1: password history -->
+        <div class="history-container">
+            <p class="history-title">Recently Generated</p>
+            <ul class="history-list" data-historyList></ul>
+        </div>
+
+        <!-- feature 7: export history -->
+        <div class="export-container">
+            <button class="exportbtn" data-exportCsv>Download CSV</button>
+        </div>
+
+    </div>
+
+    <script src="history.js"></script>
+</body>
+</html>
